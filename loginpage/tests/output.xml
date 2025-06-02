@@ -1,147 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.11.5 on win32)" generated="2025-06-02T20:15:29.931236" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3 (Python 3.11.5 on win32)" generated="2025-06-02T20:27:50.001059" rpa="false" schemaversion="5">
 <suite id="s1" name="Teste Login" source="C:\Users\lucas\Documents\GitHub\Ger-ncia-de-Configura-o-e-Controle-de-Vers-o\loginpage\tests\teste_login.robot">
 <test id="s1-t1" name="Login Com Sucesso" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:30.539142" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
+<msg time="2025-06-02T20:27:50.652544" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T20:15:30.539142" elapsed="1.846053"/>
+<status status="PASS" start="2025-06-02T20:27:50.651542" elapsed="2.509870"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:32.388209" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2025-06-02T20:27:53.164889" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:32.386195" elapsed="0.242105"/>
+<status status="PASS" start="2025-06-02T20:27:53.162409" elapsed="0.381439"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:32.632293" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
+<msg time="2025-06-02T20:27:53.546851" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:32.631289" elapsed="0.184282"/>
+<status status="PASS" start="2025-06-02T20:27:53.545847" elapsed="0.263217"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:32.816586" level="INFO">Clicking button 'xpath=//button'.</msg>
+<msg time="2025-06-02T20:27:53.810064" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:32.815571" elapsed="0.190123"/>
+<status status="PASS" start="2025-06-02T20:27:53.810064" elapsed="0.285868"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T20:15:34.007545" level="INFO">Slept 1 second.</msg>
+<msg time="2025-06-02T20:27:55.098671" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T20:15:33.005694" elapsed="1.001851"/>
+<status status="PASS" start="2025-06-02T20:27:54.096941" elapsed="1.001730"/>
 </kw>
 <kw name="Location Should Contain" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:34.018391" level="INFO">Current location contains 'dashboard.html'.</msg>
+<msg time="2025-06-02T20:27:55.110902" level="INFO">Current location contains 'dashboard.html'.</msg>
 <arg>dashboard.html</arg>
 <doc>Verifies that the current URL contains ``expected``.</doc>
-<status status="PASS" start="2025-06-02T20:15:34.008067" elapsed="0.010324"/>
+<status status="PASS" start="2025-06-02T20:27:55.098671" elapsed="0.012231"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T20:15:34.019329" elapsed="2.221874"/>
+<status status="PASS" start="2025-06-02T20:27:55.111903" elapsed="2.278596"/>
 </kw>
-<status status="PASS" start="2025-06-02T20:15:30.538138" elapsed="5.704061"/>
+<status status="PASS" start="2025-06-02T20:27:50.648542" elapsed="6.742946"/>
 </test>
 <test id="s1-t2" name="Login Com Usuário Inválido" line="23">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:36.245431" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
+<msg time="2025-06-02T20:27:57.398352" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T20:15:36.244199" elapsed="2.178182"/>
+<status status="PASS" start="2025-06-02T20:27:57.397354" elapsed="1.931311"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:38.423307" level="INFO">Typing text 'errado' into text field 'id=username'.</msg>
+<msg time="2025-06-02T20:27:59.331664" level="INFO">Typing text 'errado' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${INVALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:38.423307" elapsed="0.311315"/>
+<status status="PASS" start="2025-06-02T20:27:59.330668" elapsed="0.279429"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:38.736622" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
+<msg time="2025-06-02T20:27:59.612099" level="INFO">Typing text '123456' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:38.735628" elapsed="0.229053"/>
+<status status="PASS" start="2025-06-02T20:27:59.611096" elapsed="0.212867"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:38.965693" level="INFO">Clicking button 'xpath=//button'.</msg>
+<msg time="2025-06-02T20:27:59.824510" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:38.965693" elapsed="0.218643"/>
+<status status="PASS" start="2025-06-02T20:27:59.824510" elapsed="0.171161"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T20:15:40.185475" level="INFO">Slept 1 second.</msg>
+<msg time="2025-06-02T20:28:00.999837" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T20:15:39.184336" elapsed="1.001139"/>
+<status status="PASS" start="2025-06-02T20:27:59.998671" elapsed="1.001166"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:40.186494" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
+<msg time="2025-06-02T20:28:00.999837" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-06-02T20:15:40.185475" elapsed="0.085282"/>
+<status status="PASS" start="2025-06-02T20:28:00.999837" elapsed="0.033191"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T20:15:40.271755" elapsed="2.274060"/>
+<status status="PASS" start="2025-06-02T20:28:01.034030" elapsed="2.184839"/>
 </kw>
-<status status="PASS" start="2025-06-02T20:15:36.243200" elapsed="6.302615"/>
+<status status="PASS" start="2025-06-02T20:27:57.396341" elapsed="5.823496"/>
 </test>
 <test id="s1-t3" name="Login Com Senha Inválida" line="32">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:42.548815" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
+<msg time="2025-06-02T20:28:03.224198" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/lucas/Documents/GitHub/Ger-ncia-de-Configura-o-e-Controle-de-Vers-o/loginpage/index.html'.</msg>
 <arg>${LOGIN_PAGE}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-06-02T20:15:42.547816" elapsed="2.061018"/>
+<status status="PASS" start="2025-06-02T20:28:03.223847" elapsed="1.767619"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:44.612844" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<msg time="2025-06-02T20:28:04.993457" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
 <arg>id=username</arg>
 <arg>${VALID_USER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:44.610839" elapsed="0.358621"/>
+<status status="PASS" start="2025-06-02T20:28:04.992454" elapsed="0.299546"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:44.971412" level="INFO">Typing text '000000' into text field 'id=password'.</msg>
+<msg time="2025-06-02T20:28:05.297006" level="INFO">Typing text '000000' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${INVALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:44.970410" elapsed="0.246159"/>
+<status status="PASS" start="2025-06-02T20:28:05.294039" elapsed="0.242596"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:45.219685" level="INFO">Clicking button 'xpath=//button'.</msg>
+<msg time="2025-06-02T20:28:05.539653" level="INFO">Clicking button 'xpath=//button'.</msg>
 <arg>xpath=//button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-06-02T20:15:45.217581" elapsed="0.233929"/>
+<status status="PASS" start="2025-06-02T20:28:05.537638" elapsed="0.250215"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-06-02T20:15:46.455513" level="INFO">Slept 1 second.</msg>
+<msg time="2025-06-02T20:28:06.791290" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-06-02T20:15:45.454277" elapsed="1.001236"/>
+<status status="PASS" start="2025-06-02T20:28:05.789854" elapsed="1.001436"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-06-02T20:15:46.455513" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
+<msg time="2025-06-02T20:28:06.791290" level="INFO">Verifying element 'id=error-message' contains exact text 'Usuário ou senha incorretos.'.</msg>
 <arg>id=error-message</arg>
 <arg>Usuário ou senha incorretos.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-06-02T20:15:46.455513" elapsed="0.032531"/>
+<status status="PASS" start="2025-06-02T20:28:06.791290" elapsed="0.055082"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-06-02T20:15:46.489050" elapsed="2.185759"/>
+<status status="PASS" start="2025-06-02T20:28:06.847376" elapsed="2.193876"/>
 </kw>
-<status status="PASS" start="2025-06-02T20:15:42.546817" elapsed="6.128889"/>
+<status status="PASS" start="2025-06-02T20:28:03.220842" elapsed="5.821164"/>
 </test>
-<status status="PASS" start="2025-06-02T20:15:29.933584" elapsed="18.743121"/>
+<status status="PASS" start="2025-06-02T20:27:50.004058" elapsed="19.038924"/>
 </suite>
 <statistics>
 <total>
